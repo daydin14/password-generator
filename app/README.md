@@ -8,6 +8,7 @@
 
 - `Pull Request` :
   - Version Bump
+  - Add react-router-dom `v6.26.2` and created Home page
 
 ---
 
