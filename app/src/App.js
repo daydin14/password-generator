@@ -14,7 +14,7 @@ function App() {
     <div>
       {/* Header */}
       <header>
-        <h1>Dave's PG</h1>
+        <h1>Dave&apos;s PG</h1>
         <nav>
           <ul>
             <li>Home</li>
