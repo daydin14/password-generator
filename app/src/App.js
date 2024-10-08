@@ -1,44 +1,26 @@
 // Dependencies
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 // Styles
 import './assets/styles/App.css';
 
-// Pages
-import Home from './pages/Home';
+// Components
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+// Routes
+import AppRoutes from './AppRoutes';
 
 function App() {
-  const companyName = 'daydin14';
-  const year = new Date().getFullYear();
-  const rights = 'All rights reserved.';
-  const author = 'David Aydin';
-
   return (
     <Router basename='/password-generator'>
-      {/* basename={process.env.PUBLIC_URL}> */}
+      <Header />
       <div >
-        {/* Header */}
-        <header>
-          <h1>Dave&apos;s PG</h1>
-          <nav>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-            </ul>
-          </nav>
-        </header>
-        {/* Main */}
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<About />} /> */}
-          </Routes>
+          <AppRoutes />
         </main>
-        {/* Footer */}
-        <footer>
-          <p>{companyName} &copy; {year} {rights}</p>
-          <p>Created by {author}</p>
-        </footer>
+        <Footer />
       </div>
     </Router>
   );
