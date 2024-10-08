@@ -11,7 +11,7 @@ function App() {
   const author = 'David Aydin';
 
   return (
-    <div>
+    <div basename='/password-generator'>
       {/* Header */}
       <header>
         <h1>Dave&apos;s PG</h1>
