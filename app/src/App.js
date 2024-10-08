@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// Dependencies
+import React from 'react';
+
+// Styles
+import './assets/styles/App.css';
 
 function App() {
+  const companyName = 'daydin14';
+  const year = new Date().getFullYear();
+  const rights = 'All rights reserved.';
+  const author = 'David Aydin';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      {/* Header */}
+      <header>
+        <h1>Dave's PG</h1>
+        <nav>
+          <ul>
+            <li>Home</li>
+          </ul>
+        </nav>
       </header>
+      {/* Main */}
+      <main>
+        <h1>Hello World</h1>
+      </main>
+      {/* Footer */}
+      <footer>
+        <p>{companyName} &copy; {year} {rights}</p>
+        <p>Created by {author}</p>
+      </footer>
     </div>
   );
 }
