@@ -14,7 +14,8 @@
 ### [0.1.0] - 2024-10-08
 
 - `Pull Request` : Created Password Generator App
-  - Update readme
+  - Refactor Repo README.md
+  - Update README.md
   - Deployed to GH-Pages
   - Added ESLint & configuration and update to fix errors/warnings
   - Refactor App.js to update header, main, and footer structure
