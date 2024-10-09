@@ -7,6 +7,7 @@
 ### [0.2.0] - 2024-10-XX
 
 - `Pull Request` :
+  - Fixed Eslint configuration setup
   - Version Bump
   - Refactor routing configuration and add Header, NavMenu, and Footer components
   - Add react-router-dom `v6.26.2` and created Home page
