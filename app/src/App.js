@@ -14,15 +14,15 @@ import AppRoutes from './AppRoutes';
 
 function App() {
   return (
-    <Router basename='/password-generator'>
-      <Header />
-      <div >
-        <main>
+    <div className="flex flex-col min-h-screen">
+      <Router basename='/password-generator'>
+        <Header />
+        <main className="flex-grow p-4">
           <AppRoutes />
         </main>
         <Footer />
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

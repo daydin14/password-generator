@@ -9,9 +9,9 @@ const Footer = () => {
 
     return (
         <>
-            <footer>
-                <p>{companyName} &copy; {year} {rights}</p>
-                <p>Created by {author}</p>
+            <footer className="bg-gray-800 text-white p-4">
+                <p className="text-center">{companyName} &copy; {year} {rights}</p>
+                <p className="text-center">Created by {author}</p>
             </footer>
         </>
     )
