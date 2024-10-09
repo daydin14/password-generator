@@ -11,6 +11,8 @@ Template for later PRs
 
 # Commit History :
 
+- Update Repo README.md
+
 ### [0.3.0] - 2024-10-09
 
 - `Pull Request` : **[Added Functionality, Added Responsive Design, Fixed Dependency Warning](https://github.com/daydin14/password-generator/pull/3)**
