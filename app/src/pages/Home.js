@@ -1,9 +1,14 @@
 // Dependencies
 import React, { useState } from 'react';
+
+// Hooks
+import useIsMobile from '../hooks/useIsMobile';
+
 // Constants
-import { lowercase, uppercase, numbers, symbols } from '../constants/PasswordConstants';
+import { LOWERCASE, UPPERCASE, NUMBERS, SYMBOLS } from '../constants/PasswordConstants';
 
 const Home = () => {
+    const isMobile = useIsMobile();
     const [length, setLength] = useState(10);
     const [includeLowercase, setIncludeLowercase] = useState(true);
     const [includeUppercase, setIncludeUppercase] = useState(false);
@@ -12,10 +17,10 @@ const Home = () => {
     const [password, setPassword] = useState('');
     const generatePassword = () => {
         let characters = '';
-        if (includeLowercase) characters += lowercase;
-        if (includeUppercase) characters += uppercase;
-        if (includeNumbers) characters += numbers;
-        if (includeSymbols) characters += symbols;
+        if (includeLowercase) characters += LOWERCASE;
+        if (includeUppercase) characters += UPPERCASE;
+        if (includeNumbers) characters += NUMBERS;
+        if (includeSymbols) characters += SYMBOLS;
         let generatedPassword = '';
         for (let i = 0; i < length; i++) {
             generatedPassword += characters.charAt(Math.floor(Math.random() * characters.length));
@@ -28,9 +33,9 @@ const Home = () => {
     };
     return (
         <>
-            <div className="flex flex-col items-center justify-center bg-gray-600 min-h-screen">
+            <div className={`flex flex-col items-center justify-center bg-gray-600 ${isMobile ? 'p-4' : 'p-36'} `}>
                 <h1 className="text-4xl font-bold mb-4 text-white">Password Generator</h1>
-                <p className="mb-8 text-lg text-gray-300">Generate a secure password with one click!</p>
+                <p className="mb-8 text-lg text-gray-300">Generate a secure password easily!</p>
                 <div className="flex flex-col items-center mb-4">
                     <label className="text-white mb-2">Character Length: {length}</label>
                     <input
