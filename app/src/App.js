@@ -17,7 +17,7 @@ function App() {
     <div className="flex flex-col min-h-screen">
       <Router basename='/password-generator'>
         <Header />
-        <main className="flex-grow p-4">
+        <main className="flex-grow p-14">
           <AppRoutes />
         </main>
         <Footer />

@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "homepage": "https://daydin14.github.io/password-generator/",
   "dependencies": {
@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@eslint/js": "^9.12.0",
     "@types/eslint__js": "^8.42.3",
     "autoprefixer": "^10.4.20",
