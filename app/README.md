@@ -9,6 +9,16 @@ Template for later PRs
 
 ---
 
+### [0.3.0] - 2024-10-XX
+
+- `Pull Request` : **[](https://github.com/daydin14/password-generator/pull/3)**
+  - Update README.md
+  - Add password generation functionality to Home page
+  - Added password constants for lowercase, uppercase, numbers, and symbols
+  - Version Bump
+
+---
+
 ### [0.2.0] - 2024-10-XX
 
 - `Pull Request` : **[Added Routing, Fixed Linter issues, and Updated Layout with Tailwind CSS](https://github.com/daydin14/password-generator/pull/2)**
