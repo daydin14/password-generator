@@ -11,10 +11,11 @@ Template for later PRs
 
 # Commit History :
 
-### [0.3.0] - 2024-10-X9
+### [0.3.0] - 2024-10-09
 
 - `Pull Request` : **[Added Functionality, Added Responsive Design, Fixed Dependency Warning](https://github.com/daydin14/password-generator/pull/3)**
 
+  - Fixed Pull Request 3 Date
   - Update README.md
   - Update layout and styles in App.js, Header.js, NavMenu.js, and Home.js
   - Refactor password constants naming conventions
