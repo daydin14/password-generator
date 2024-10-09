@@ -12,7 +12,16 @@ Template for later PRs
 ### [0.3.0] - 2024-10-XX
 
 - `Pull Request` : **[](https://github.com/daydin14/password-generator/pull/3)**
-  - Update README.md
+
+  - Fixed babel-preset-react-app dependency warning:
+
+    ```
+      ⚠️ `package without declaring it in its dependencies`
+
+      ⚠️ This is working because "it" is already in your node_modules folder for unrelated reasons,
+          but may break at any time.
+    ```
+
   - Add password generation functionality to Home page
   - Added password constants for lowercase, uppercase, numbers, and symbols
   - Version Bump
