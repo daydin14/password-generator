@@ -1,35 +1,27 @@
 // Dependencies
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 // Styles
 import './assets/styles/App.css';
 
-function App() {
-  const companyName = 'daydin14';
-  const year = new Date().getFullYear();
-  const rights = 'All rights reserved.';
-  const author = 'David Aydin';
+// Components
+import Header from './components/Header';
+import Footer from './components/Footer';
 
+// Routes
+import AppRoutes from './AppRoutes';
+
+function App() {
   return (
-    <div basename='/password-generator'>
-      {/* Header */}
-      <header>
-        <h1>Dave&apos;s PG</h1>
-        <nav>
-          <ul>
-            <li>Home</li>
-          </ul>
-        </nav>
-      </header>
-      {/* Main */}
-      <main>
-        <h1>Hello World</h1>
-      </main>
-      {/* Footer */}
-      <footer>
-        <p>{companyName} &copy; {year} {rights}</p>
-        <p>Created by {author}</p>
-      </footer>
+    <div className="flex flex-col min-h-screen">
+      <Router basename='/password-generator'>
+        <Header />
+        <main className="flex-grow p-4">
+          <AppRoutes />
+        </main>
+        <Footer />
+      </Router>
     </div>
   );
 }
